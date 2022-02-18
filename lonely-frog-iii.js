@@ -88,4 +88,4 @@ function jumpTo(x, y) {
 
 jumpTo(1, 107)
 
-// Does numbers like 17 or something where you add at the end are not accounted for.
+//Numbers like 17 or something where you add at the end are not accounted for.
