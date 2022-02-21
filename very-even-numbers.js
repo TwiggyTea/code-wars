@@ -26,26 +26,24 @@ Note: The numbers will always be 0 or positive integers!
 
 //ATTEMPT
 
+
+//NOTE: TRY RECURSION
 function isVeryEvenNumber(n) {
 
-    digitAdder = origanl = n => {
+    let digitTotal = 0
+    let nString = n.toString()
 
-        let digitTotal = 0
-
-        for (let i = 0; i < origanl.length; i++) {
-            console.log(origanl)
-            console.log(origanl[i])
-            digitTotal+= origanl[i]
-        }
-
-        console.log(digitTotal)
-        return digitTotal
+    for (let i = 0; i < nString.length; i++) {
+        digitTotal+= parseInt(nString[i])
     }
 
-    console.log(digitAdder())
+    if (digitTotal >= 10) {
 
-    return digitAdder()/2
+    }
 
+    console.log(digitTotal)
+    console.log(digitTotal % 2)
+
+    return digitTotal % 2 ? false : true
 }
-
-console.log(isVeryEvenNumber(222))
+console.log(isVeryEvenNumber(0))
